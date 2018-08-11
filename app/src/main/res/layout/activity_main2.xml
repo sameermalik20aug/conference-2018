@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="Professors"
+        android:id="@+id/btnProf"
+        android:textSize="15sp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="90dp"
+        />
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="Schedule"
+        android:id="@+id/btnSch"
+        android:textSize="15sp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="220dp"
+        />
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="Directions"
+        android:id="@+id/btnDir"
+        android:textSize="15sp"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="160dp"
+        />
+
+</RelativeLayout>
