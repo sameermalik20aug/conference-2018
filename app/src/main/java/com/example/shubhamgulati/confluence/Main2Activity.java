@@ -5,9 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class Main2Activity extends AppCompatActivity {
-    Button btnProf,btnDir,btnSch;
+    ImageButton btnProf,btnDir,btnSch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

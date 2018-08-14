@@ -1,14 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentA">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentA"
+    android:theme="@style/MyTheme">
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:scaleType="centerCrop"
+          android:src="@drawable/mike"
+          />
+
+      <android.support.v7.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="21dp"
+          android:layout_marginRight="21dp"
+          android:layout_marginBottom="37dp"
+          android:layout_alignParentBottom="true"
+          android:layout_centerHorizontal="true"
+          app:cardCornerRadius="11dp"
+          android:background="#FFFFFF"
+          >
+
+          <Button
+              android:id="@+id/Next"
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_alignParentBottom="true"
+              android:layout_centerHorizontal="true"
+              android:layout_gravity="center"
+              android:background="#FFFFFF"
+              android:fontFamily="@font/chewy"
+              android:text="Next"
+              android:textSize="23sp"
+              android:textStyle="bold" />
+      </android.support.v7.widget.CardView>
+
+      <TextView
+          android:layout_width="339dp"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="41dp"
+          android:fontFamily="@font/chewy"
+          android:gravity="center"
+          android:text="2nd INTERNATIONAL CONFERENCE ON
+  ENTREPRENEURSHIP, INNOVATION AND LEADERSHIP
+  (ICEIL’2018)"
+          android:textColor="#FFFFFF"
+          android:textSize="23dp"
+          android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:layout_marginLeft="11dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_calendar_today" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:layout_marginLeft="11dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="147dp"
+        android:src="@drawable/ic_location_on" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="FragmentA" />
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/chewy"
+        android:gravity="center"
+        android:text="19 - 21 December 2018"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"
+        />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/venue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="183dp"
+        android:fontFamily="@font/chewy"
+        android:gravity="center"
+        android:text="Amity University, Noida"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp" />
+
+
+</RelativeLayout>
