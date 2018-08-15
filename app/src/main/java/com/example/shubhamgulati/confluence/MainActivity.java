@@ -22,8 +22,17 @@ public class MainActivity extends AppCompatActivity {
         vp = findViewById(R.id.vp);
         vp.setAdapter(new MyPageAdapter(getSupportFragmentManager()));
         TabLayout tabLayout = findViewById(R.id.tabDots);
+
         tabLayout.setupWithViewPager(vp);
+
         nButton = findViewById(R.id.Next);
+
+
+
+
+
+
+        
 //        nButton.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
@@ -36,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
         public MyPageAdapter(FragmentManager fm) {
             super(fm);
+            //wassup boiiiiii
         }
 
 
