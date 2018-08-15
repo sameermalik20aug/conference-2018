@@ -1,5 +1,6 @@
 package com.example.shubhamgulati.confluence;
 
+import android.content.Intent;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -13,6 +14,8 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
+
+    Button btnNext;
     Button nButton;
     ViewPager vp;
     @Override
@@ -23,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         vp.setAdapter(new MyPageAdapter(getSupportFragmentManager()));
         TabLayout tabLayout = findViewById(R.id.tabDots);
         tabLayout.setupWithViewPager(vp);
-        nButton = findViewById(R.id.Next);
+        btnNext = findViewById(R.id.btnNext);
 //        nButton.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
@@ -42,8 +45,22 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public Fragment getItem(int position) {
             switch (position){
-                case 0: return new FragmentA();
-                case 1: return new FragmentC();
+                case 0: btnNext.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if(vp.getCurrentItem()==0){
+                            vp.setCurrentItem(1,true);
+                        }
+                        else if(vp.getCurrentItem()==1){
+                            Intent intent = new Intent(MainActivity.this,Main2Activity.class);
+                            startActivity(intent);
+                        }
+
+                    }
+                });
+                    return new FragmentA();
+                case 1:
+                    return new FragmentC();
             }
             return null;
         }

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Directions">
+
+    <com.jsibbold.zoomage.ZoomageView
+        android:id="@+id/DirView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/routemap"
+        android:scaleType="fitXY"
+        android:layout_margin="7dp"
+        app:zoomage_restrictBounds="true"
+        app:zoomage_animateOnReset="false"
+        app:zoomage_autoResetMode="NEVER"
+        app:zoomage_autoCenter="false"
+        app:zoomage_zoomable="true"
+        app:zoomage_translatable="true"
+        app:zoomage_minScale="0.346"
+        app:zoomage_maxScale="4"
+        />
+
+</android.support.constraint.ConstraintLayout>

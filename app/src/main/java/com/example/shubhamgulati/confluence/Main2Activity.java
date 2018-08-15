@@ -9,6 +9,7 @@ import android.widget.ImageButton;
 
 public class Main2Activity extends AppCompatActivity {
     ImageButton btnProf,btnDir,btnSch;
+    Intent dirIntent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,14 @@ public class Main2Activity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(getBaseContext(),ProfessorActivity.class);
                 startActivity(i);
+            }
+        });
+
+        btnDir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dirIntent = new Intent(getBaseContext(),Directions.class);
+                startActivity(dirIntent);
             }
         });
     }
