@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.shubhamgulati.confluence">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
+
         android:icon="@mipmap/ic_launcher"
         android:label="I C E I L 2018"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:replace="android:label"
+        >
         <activity
             android:name=".MainActivity"
-            android:theme="@style/MyTheme2"
             android:screenOrientation="portrait"
-            >
+            android:theme="@style/MyTheme2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,18 +32,19 @@
         <activity
             android:name=".ProfessorActivity"
             android:label="Speakers"
-            android:screenOrientation="portrait"
-            android:parentActivityName=".Main2Activity" />
+            android:parentActivityName=".Main2Activity"
+            android:screenOrientation="portrait" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".Directions"
+        <activity
+            android:name=".Directions"
             android:label="Directions"
-            android:screenOrientation="portrait"
             android:parentActivityName=".Main2Activity"
-            />
+            android:screenOrientation="portrait" />
+        <activity android:name=".MemoriesActivity"></activity>
     </application>
 
 </manifest>

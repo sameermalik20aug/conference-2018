@@ -17,12 +17,10 @@ public class ProfessorActivity extends AppCompatActivity {
         setContentView(R.layout.activity_professor);
         rv = findViewById(R.id.rv);
         ArrayList<Prof> profArrayList = new ArrayList<>();
-        profArrayList.add(new Prof("Prof.(Dr.) Abhay Bansal", "Prof. (Dr.) ABHAY BANSAL, Professor & Head, Department of CSE, ASET Director, DICET, Amity University, Noida has an all-embracing experience of more than 20 years in Teaching, Consultancy, and Research & Industry.",R.drawable.abhay_bansal));
-        profArrayList.add(new Prof("Ms Abha  Sachdev","Asst. Professor (Grade - III)",R.drawable.abha));
-        profArrayList.add(new Prof("Mr Mukul Varshney","Asst. Professor (Grade - II)",R.drawable.mukul));
-        profArrayList.add(new Prof("Mr Abhishek  Singhal","Asst. Professor (Grade - III) Dy. HoD (CSE)",R.drawable.abhishek));
-        profArrayList.add(new Prof("Prof.(Dr) Sanjeev  Thakur","Professor",R.drawable.sanjeev));
-        profArrayList.add(new Prof("Mr Yogesh Singh Rathore ","Asst. Professor (Grade - III)",R.drawable.yogesh));
+        profArrayList.add(new Prof("Scott McKinley","AWS Academy Leader at Amazon.com, Inc. \nScott McKinley has an established track record of leading global innovation and corporate entrepreneurship in the education field throughout Asia, Europe, and the USA.",R.drawable.scott));
+        profArrayList.add(new Prof("Dr. Mustafa Taher Ali Saasa","Chairman at Sell Force International LLC",R.drawable.tahir));
+        profArrayList.add(new Prof("H.E. Mr. Radu Octavian Dobre","Ambassador Extraordinary and Plenipotentiary of Romania to the Republic of India",R.drawable.radu));
+        profArrayList.add(new Prof("H.E. Ms. Jainaba Jagne","Ambassador-Designate of Gambia",R.drawable.jagne));
         ProfAdapter profAdapter = new ProfAdapter(ProfessorActivity.this,profArrayList);
         LinearLayoutManager lm = new LinearLayoutManager(this);
         rv.setAdapter(profAdapter);
