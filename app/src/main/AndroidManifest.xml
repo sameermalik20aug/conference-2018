@@ -7,14 +7,12 @@
 
     <application
         android:allowBackup="true"
-
         android:icon="@mipmap/ic_launcher"
         android:label="I C E I L 2018"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:replace="android:label"
-        >
+        tools:replace="android:label">
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"
@@ -44,7 +42,12 @@
             android:label="Directions"
             android:parentActivityName=".Main2Activity"
             android:screenOrientation="portrait" />
-        <activity android:name=".MemoriesActivity"></activity>
+        <activity android:name=".MemoriesActivity" />
+        <activity android:name=".AboutActivity"
+                  android:parentActivityName=".Main2Activity"
+                  android:label="About"
+
+            />
     </application>
 
 </manifest>

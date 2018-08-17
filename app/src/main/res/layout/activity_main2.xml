@@ -30,7 +30,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fontFamily="@font/chewy"
+            android:fontFamily="@font/alef"
             android:textStyle="bold"
             android:textColor="@color/colorPrimaryDark"
             android:text="I C E I L 2018"
@@ -41,7 +41,7 @@
 
     <android.support.v7.widget.CardView
         android:layout_width="57dp"
-        android:layout_height="51dp"
+        android:layout_height="50dp"
         android:layout_marginBottom="7dp"
         android:layout_marginEnd="7dp"
         android:layout_marginLeft="7dp"
@@ -53,6 +53,7 @@
         >
 
         <ImageButton
+            android:id="@+id/auBtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#FFFFFF"
@@ -76,7 +77,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fontFamily="@font/chewy"
+            android:fontFamily="@font/alef"
             android:gravity="center"
             android:text="Speakers"
             android:textColor="@color/colorPrimaryDark"
@@ -96,7 +97,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fontFamily="@font/chewy"
+            android:fontFamily="@font/alef"
             android:gravity="center"
             android:text="Schedule"
             android:textColor="@color/colorPrimaryDark"
@@ -118,7 +119,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fontFamily="@font/chewy"
+            android:fontFamily="@font/alef"
             android:gravity="center"
             android:text="Directions"
             android:textColor="@color/colorPrimaryDark"
@@ -138,7 +139,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fontFamily="@font/chewy"
+            android:fontFamily="@font/alef"
             android:gravity="center"
             android:text="Memories"
             android:textColor="@color/colorPrimaryDark"

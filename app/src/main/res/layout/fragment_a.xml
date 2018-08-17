@@ -16,22 +16,20 @@
         android:src="@drawable/mike" />
 
 
-
-
-      <TextView
-          android:layout_width="339dp"
-          android:layout_height="wrap_content"
-          android:layout_alignParentTop="true"
-          android:layout_centerHorizontal="true"
-          android:layout_marginTop="41dp"
-          android:fontFamily="@font/chewy"
-          android:gravity="center"
-          android:text="2nd INTERNATIONAL CONFERENCE ON
+    <TextView
+        android:layout_width="339dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:fontFamily="@font/alef"
+        android:gravity="center_horizontal"
+        android:text="2nd INTERNATIONAL CONFERENCE ON
   ENTREPRENEURSHIP, INNOVATION AND LEADERSHIP
   (ICEIL’2018)"
-          android:textColor="#FFFFFF"
-          android:textSize="23dp"
-          android:textStyle="bold" />
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -57,27 +55,31 @@
         android:id="@+id/date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
+        android:layout_alignEnd="@+id/venue"
         android:layout_centerVertical="true"
-        android:layout_marginEnd="66dp"
-        android:fontFamily="@font/chewy"
+        android:fontFamily="@font/alef"
         android:gravity="center"
         android:text="19 - 21 December 2018"
         android:textColor="#FFFFFF"
-        android:textSize="23sp" />
+        android:textSize="20sp"
+        android:textStyle="italic"
+        />
 
     <TextView
         android:id="@+id/venue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/date"
-        android:layout_marginBottom="187dp"
-        android:fontFamily="@font/chewy"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="188dp"
+        android:layout_marginEnd="14dp"
+        android:fontFamily="@font/alef"
         android:gravity="center"
         android:text="Amity University, Noida"
         android:textColor="#FFFFFF"
-        android:textSize="23sp" />
+        android:textSize="20sp"
+        android:textStyle="italic"
+        />
 
 
 </RelativeLayout>

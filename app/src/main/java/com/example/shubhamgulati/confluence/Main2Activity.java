@@ -8,8 +8,8 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 public class Main2Activity extends AppCompatActivity {
-    ImageButton btnProf,btnDir,btnSch,memories;
-    Intent dirIntent;
+    ImageButton btnProf,btnDir,btnSch,memories,auBtn;
+    Intent dirIntent,auIntent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +18,7 @@ public class Main2Activity extends AppCompatActivity {
         btnDir = findViewById(R.id.btnDir);
         btnSch = findViewById(R.id.btnSch);
         btnProf = findViewById(R.id.btnProf);
+        auBtn = findViewById(R.id.auBtn);
         memories = findViewById(R.id.memories);
         btnProf.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +40,14 @@ public class Main2Activity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent mintent = new Intent(Main2Activity.this,MemoriesActivity.class);
                 startActivity(mintent);
+            }
+        });
+
+        auBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                auIntent = new Intent(Main2Activity.this,AboutActivity.class);
+                startActivity(auIntent);
             }
         });
     }

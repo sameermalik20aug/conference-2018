@@ -44,10 +44,12 @@
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
             android:background="#FFFFFF"
-            android:fontFamily="@font/chewy"
+            android:fontFamily="@font/alef"
             android:text="Next"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="23sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:fontFamily="@font/alef" />
     </android.support.v7.widget.CardView>
 
 
