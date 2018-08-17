@@ -42,7 +42,6 @@
             android:label="Directions"
             android:parentActivityName=".Main2Activity"
             android:screenOrientation="portrait" />
-        <activity android:name=".MemoriesActivity" />
         <activity android:name=".AboutActivity"
                   android:parentActivityName=".Main2Activity"
                   android:label="About"

@@ -1,15 +1,21 @@
 package com.example.shubhamgulati.confluence;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.himangi.imagepreview.ImagePreviewActivity;
+
+import java.util.ArrayList;
+
 public class Main2Activity extends AppCompatActivity {
     ImageButton btnProf,btnDir,btnSch,memories,auBtn;
     Intent dirIntent,auIntent;
+    ArrayList<String> imagesArrayList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +26,13 @@ public class Main2Activity extends AppCompatActivity {
         btnProf = findViewById(R.id.btnProf);
         auBtn = findViewById(R.id.auBtn);
         memories = findViewById(R.id.memories);
+        imagesArrayList.add(getURLForResource(R.drawable.w7));
+        imagesArrayList.add(getURLForResource(R.drawable.w8));
+        imagesArrayList.add(getURLForResource(R.drawable.w9));
+        imagesArrayList.add(getURLForResource(R.drawable.w10));
+        imagesArrayList.add(getURLForResource(R.drawable.w11));
+        imagesArrayList.add(getURLForResource(R.drawable.w13));
+        imagesArrayList.add(getURLForResource(R.drawable.w14));
         btnProf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,8 +51,11 @@ public class Main2Activity extends AppCompatActivity {
         memories.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent mintent = new Intent(Main2Activity.this,MemoriesActivity.class);
-                startActivity(mintent);
+                Intent intent = new Intent(Main2Activity.this, ImagePreviewActivity.class);
+                intent.putExtra(ImagePreviewActivity.IMAGE_LIST,
+                        imagesArrayList);
+                intent.putExtra(ImagePreviewActivity.CURRENT_ITEM, 3);
+                startActivity(intent);
             }
         });
 
@@ -50,5 +66,9 @@ public class Main2Activity extends AppCompatActivity {
                 startActivity(auIntent);
             }
         });
+    }
+
+    public String getURLForResource (int resourceId) {
+        return Uri.parse("android.resource://"+R.class.getPackage().getName()+"/" +resourceId).toString();
     }
 }
