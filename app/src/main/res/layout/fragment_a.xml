@@ -29,7 +29,8 @@
   (ICEIL’2018)"
         android:textColor="#FFFFFF"
         android:textSize="25sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:id="@+id/textinfo"/>
 
     <ImageView
         android:id="@+id/imageView"
@@ -37,49 +38,45 @@
         android:layout_height="67dp"
         android:layout_marginLeft="11dp"
         android:layout_alignParentStart="true"
-        android:layout_centerVertical="true"
-        android:src="@drawable/ic_calendar_today" />
+        android:src="@drawable/ic_calendar_today"
+        android:layout_above="@id/imageView2"
+        />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="67dp"
         android:layout_height="67dp"
         android:layout_marginLeft="11dp"
-        android:layout_below="@+id/imageView"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="147dp"
+        android:layout_marginBottom="40dp"
         android:src="@drawable/ic_location_on" />
 
     <TextView
         android:id="@+id/date"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/venue"
-        android:layout_centerVertical="true"
+        android:layout_height="67dp"
         android:fontFamily="@font/alef"
-        android:gravity="center"
         android:text="19 - 21 December 2018"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:textStyle="italic"
-        />
+        android:layout_toRightOf="@id/imageView"
+        android:layout_alignTop="@id/imageView"
+        android:gravity="center"/>
 
     <TextView
         android:id="@+id/venue"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="188dp"
-        android:layout_marginEnd="14dp"
+        android:layout_height="67dp"
+        android:layout_toRightOf="@id/imageView2"
+        android:layout_alignTop="@+id/imageView2"
         android:fontFamily="@font/alef"
         android:gravity="center"
         android:text="Amity University, Noida"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="italic"
-        />
+        android:textSize="25sp"
+        android:textStyle="italic" />
 
 
 </RelativeLayout>
